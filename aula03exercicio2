@@ -1,0 +1,24 @@
+//Elabore um algoritimo que dado peso e altura mostre sua condição de acorodo com a tabela abaixo
+//IMC em adultos condição
+//Abaixo de 18.5 abaixo do Peso;
+//entre 18.5 e 25 Peso normal
+//Entre 25 e 30 Acima do Peso;
+// Entre 30 e 40 Obeso;
+// Acima de 40 obsidade Grave;
+
+const peso = 96;
+const altura = 1.79
+const Imc = peso / Math.pow(altura, 2);
+console.log(Imc);
+
+if (Imc < 18.5) {
+    console.log('abaixo do peso');
+} else if (Imc >= 18.5 && Imc <= 25) {
+    console.log('Peso normal');
+} else if (Imc > 25 && Imc <= 30) {
+    console.log('Acima do Peso');
+} else if (Imc > 30 && Imc <= 40) {
+    console.log('Obeso');
+} else {
+    console.log('Obsidade Grave');
+}
